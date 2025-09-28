@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medellin Dispensary - Medical Cannabis Solutions</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#059669", secondary: "#0ea5e9" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before {
+      content: "\f3c2";
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center">
+            <h1 class="text-2xl font-['Pacifico'] text-primary">
+              Medellin Dispensary
+            </h1>
+          </div>
+          <nav class="hidden md:flex space-x-8">
+            <a
+              href="#products"
+              class="text-gray-700 hover:text-primary transition-colors"
+              >Products</a
+            >
+            <a
+              href="#how-it-works"
+              class="text-gray-700 hover:text-primary transition-colors"
+              >How It Works</a
+            >
+            <a
+              href="#education"
+              class="text-gray-700 hover:text-primary transition-colors"
+              >Education</a
+            >
+            <a
+              href="#about"
+              class="text-gray-700 hover:text-primary transition-colors"
+              >About</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-700 hover:text-primary transition-colors"
+              >Contact</a
+            >
+          </nav>
+          <button
+            class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap"
+          >
+            Start Consultation
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section
+      class="relative py-24 lg:py-32"
+      style="background-image: url('https://static.readdy.ai/image/9033a09c246ba844b1ad0ce801313587/7e8ad70373ada99501c364fbda83c476.jfif'); background-size: cover; background-position: center;"
+    >
+      <div class="absolute inset-0 bg-white/85"></div>
+      <div class="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div class="text-left">
+            <h1
+              class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight"
+            >
+              Medical Cannabis<br />
+              <span class="text-primary">Solutions for Your</span><br />
+              Health Journey
+            </h1>
+            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+              Professional medical cannabis extracts, oils, and tinctures
+              delivered safely to your door in Medellin. Prescription required
+              from licensed medical cannabis doctors.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 mb-8">
+              <button
+                class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors text-base font-semibold whitespace-nowrap"
+              >
+                Start Your Consultation
+              </button>
+              <button
+                class="border-2 border-gray-300 text-gray-700 px-8 py-3 !rounded-button hover:border-primary hover:text-primary transition-colors text-base font-semibold whitespace-nowrap"
+              >
+                Learn More
+              </button>
+            </div>
+            <div class="flex items-center space-x-8">
+              <div class="flex items-center">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                  <i class="ri-shield-check-line text-primary text-lg"></i>
+                </div>
+                <span class="text-gray-600 text-sm">Licensed & Regulated</span>
+              </div>
+              <div class="flex items-center">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                  <i class="ri-truck-line text-primary text-lg"></i>
+                </div>
+                <span class="text-gray-600 text-sm">Secure Delivery</span>
+              </div>
+            </div>
+          </div>
+          <div class="lg:flex justify-center">
+            <div class="w-full max-w-md">
+              <img
+                src="https://readdy.ai/api/search-image?query=Professional%20medical%20cannabis%20oil%20bottles%20and%20tinctures%20arranged%20on%20clean%20white%20medical%20surface%2C%20amber%20glass%20dropper%20bottles%20with%20precise%20labeling%2C%20pharmaceutical%20grade%20packaging%20in%20sterile%20clinical%20environment%2C%20professional%20medical%20product%20photography%20with%20soft%20natural%20lighting&width=400&height=500&seq=hero001&orientation=portrait"
+                alt="Medical Cannabis Products"
+                class="w-full h-auto rounded-xl shadow-lg object-cover object-top"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Product Categories -->
+    <section id="products" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">
+            Medical Cannabis Products
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Professional-grade cannabis extracts formulated with precise CBD:THC
+            ratios for optimal therapeutic benefits
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Cannabis Oils -->
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-8"
+          >
+            <div
+              class="w-full h-48 bg-gray-100 rounded-lg mb-6 overflow-hidden"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=Professional%20medical%20cannabis%20oil%20bottles%20with%20precise%20labeling%2C%20amber%20glass%20dropper%20bottles%20on%20clean%20white%20medical%20surface%2C%20pharmaceutical%20grade%20packaging%20with%20CBD%20THC%20ratio%20labels%2C%20sterile%20clinical%20presentation%2C%20professional%20medical%20product%20photography%20with%20soft%20lighting&width=400&height=300&seq=oil001&orientation=landscape"
+                alt="Cannabis Oils"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Cannabis Oils</h3>
+            <p class="text-gray-600 mb-6">
+              Premium sublingual oils with precise dosing for consistent
+              therapeutic effects
+            </p>
+            <div class="space-y-3 mb-6">
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700">CBD:THC 1:1</span>
+                <span
+                  class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm"
+                  >25mg/ml</span
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700">CBD:THC 2:1</span>
+                <span
+                  class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm"
+                  >50mg/ml</span
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700">CBD:THC 10:1</span>
+                <span
+                  class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm"
+                  >100mg/ml</span
+                >
+              </div>
+            </div>
+            <button
+              class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors font-semibold whitespace-nowrap"
+            >
+              View Products
+            </button>
+          </div>
+          <!-- Tinctures -->
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-8"
+          >
+            <div
+              class="w-full h-48 bg-gray-100 rounded-lg mb-6 overflow-hidden"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=Medical%20cannabis%20tincture%20bottles%20with%20dropper%20caps%2C%20professional%20pharmaceutical%20packaging%20on%20pristine%20white%20medical%20counter%2C%20amber%20glass%20bottles%20with%20precise%20measurement%20markings%2C%20clinical%20laboratory%20setting%20with%20sterile%20presentation&width=400&height=300&seq=tincture001&orientation=landscape"
+                alt="Cannabis Tinctures"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Tinctures</h3>
+            <p class="text-gray-600 mb-6">
+              Fast-acting alcohol-based extracts for rapid therapeutic relief
+            </p>
+            <div class="space-y-3 mb-6">
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700">CBD:THC 1:1</span>
+                <span
+                  class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm"
+                  >15mg/ml</span
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700">CBD:THC 3:1</span>
+                <span
+                  class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm"
+                  >30mg/ml</span
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700">CBD:THC 5:1</span>
+                <span
+                  class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm"
+                  >75mg/ml</span
+                >
+              </div>
+            </div>
+            <button
+              class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors font-semibold whitespace-nowrap"
+            >
+              View Products
+            </button>
+          </div>
+          <!-- Capsules -->
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-8"
+          >
+            <div
+              class="w-full h-48 bg-gray-100 rounded-lg mb-6 overflow-hidden"
+            >
+              <img
+                src="https://readdy.ai/api/search-image?query=Medical%20cannabis%20capsules%20in%20pharmaceutical%20bottles%2C%20professional%20pill%20containers%20with%20precise%20labeling%2C%20white%20medical%20capsules%20on%20clean%20clinical%20surface%2C%20sterile%20pharmaceutical%20packaging%20with%20CBD%20THC%20dosage%20information%2C%20professional%20medical%20product%20display&width=400&height=300&seq=capsules001&orientation=landscape"
+                alt="Cannabis Capsules"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Capsules</h3>
+            <p class="text-gray-600 mb-6">
+              Convenient pre-measured doses for consistent daily medication
+            </p>
+            <div class="space-y-3 mb-6">
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700">CBD:THC 1:1</span>
+                <span
+                  class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm"
+                  >10mg each</span
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700">CBD:THC 4:1</span>
+                <span
+                  class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm"
+                  >20mg each</span
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700">CBD Only</span>
+                <span
+                  class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm"
+                  >25mg each</span
+                >
+              </div>
+            </div>
+            <button
+              class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors font-semibold whitespace-nowrap"
+            >
+              View Products
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">How It Works</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Simple, secure process from medical consultation to delivery
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div
+              class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="ri-stethoscope-line text-primary text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">
+              1. Medical Consultation
+            </h3>
+            <p class="text-gray-600">
+              Visit a licensed medical cannabis doctor in Colombia to receive
+              your prescription. We provide a list of certified doctors.
+            </p>
+          </div>
+          <div class="text-center">
+            <div
+              class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="ri-upload-cloud-line text-secondary text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">
+              2. Upload Prescription
+            </h3>
+            <p class="text-gray-600">
+              Securely upload your valid medical cannabis prescription through
+              our encrypted platform for verification.
+            </p>
+          </div>
+          <div class="text-center">
+            <div
+              class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="ri-shopping-cart-line text-green-700 text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">
+              3. Select Products
+            </h3>
+            <p class="text-gray-600">
+              Choose from our curated selection of medical cannabis products
+              based on your prescription and needs.
+            </p>
+          </div>
+          <div class="text-center">
+            <div
+              class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="ri-truck-line text-orange-700 text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">
+              4. Secure Delivery
+            </h3>
+            <p class="text-gray-600">
+              Receive your medical cannabis products through our secure,
+              discreet delivery service in Medellin.
+            </p>
+          </div>
+        </div>
+        <div class="mt-16 bg-blue-50 rounded-xl p-8">
+          <div class="flex items-start space-x-4">
+            <div class="w-6 h-6 flex items-center justify-center mt-1">
+              <i class="ri-information-line text-blue-600 text-xl"></i>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                Important Notice
+              </h4>
+              <p class="text-gray-700">
+                Medellin Dispensary is not a medical practice or pharmacy. We
+                are a licensed distributor of medical cannabis products. You
+                must obtain your prescription from a licensed medical cannabis
+                doctor in Colombia before placing an order.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Educational Hub -->
+    <section id="education" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">Educational Hub</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Stay informed with the latest medical cannabis research, dosing
+            guides, and patient resources
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article
+            class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden"
+          >
+            <div class="h-48 bg-gray-100 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=Medical%20research%20laboratory%20with%20scientists%20studying%20cannabis%20compounds%2C%20professional%20medical%20research%20environment%20with%20microscopes%20and%20scientific%20equipment%2C%20clean%20white%20laboratory%20setting%20with%20medical%20professionals%20in%20lab%20coats%2C%20scientific%20cannabis%20research%20facility&width=400&height=300&seq=research001&orientation=landscape"
+                alt="Medical Research"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Understanding CBD:THC Ratios
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Learn how different cannabinoid ratios affect therapeutic
+                outcomes and which ratio might be best for your condition.
+              </p>
+              <a
+                href="#"
+                class="text-primary font-semibold hover:text-primary/80 transition-colors"
+                >Read Article →</a
+              >
+            </div>
+          </article>
+          <article
+            class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden"
+          >
+            <div class="h-48 bg-gray-100 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=Medical%20dosing%20chart%20and%20pharmaceutical%20measurement%20tools%20on%20clean%20white%20medical%20desk%2C%20precise%20medical%20dosing%20equipment%20with%20syringes%20and%20measuring%20devices%2C%20professional%20healthcare%20dosing%20guide%20materials%20in%20sterile%20clinical%20environment&width=400&height=300&seq=dosing001&orientation=landscape"
+                alt="Dosing Guide"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Dosing Guidelines for Beginners
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Comprehensive guide to starting your medical cannabis journey
+                with safe, effective dosing strategies.
+              </p>
+              <a
+                href="#"
+                class="text-primary font-semibold hover:text-primary/80 transition-colors"
+                >Read Article →</a
+              >
+            </div>
+          </article>
+          <article
+            class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden"
+          >
+            <div class="h-48 bg-gray-100 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=Colombian%20legal%20documents%20and%20medical%20cannabis%20regulations%20on%20professional%20desk%2C%20official%20government%20papers%20and%20legal%20compliance%20materials%2C%20clean%20office%20environment%20with%20legal%20documentation%20and%20medical%20cannabis%20law%20books&width=400&height=300&seq=legal001&orientation=landscape"
+                alt="Legal Information"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Medical Cannabis Laws in Colombia
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Stay updated on current regulations, patient rights, and legal
+                requirements for medical cannabis use in Colombia.
+              </p>
+              <a
+                href="#"
+                class="text-primary font-semibold hover:text-primary/80 transition-colors"
+                >Read Article →</a
+              >
+            </div>
+          </article>
+        </div>
+        <div class="text-center mt-12">
+          <button
+            class="bg-primary text-white px-8 py-4 !rounded-button hover:bg-primary/90 transition-colors text-lg font-semibold whitespace-nowrap"
+          >
+            Visit Our Blog
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Legal Compliance -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">
+            Licensed & Compliant
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Fully licensed and regulated by Colombian authorities for medical
+            cannabis distribution
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-gray-50 rounded-xl p-6 text-center">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="ri-government-line text-primary text-2xl"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Ministry of Health
+            </h3>
+            <p class="text-gray-600 text-sm">License #MH-2024-001</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-6 text-center">
+            <div
+              class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="ri-shield-check-line text-secondary text-2xl"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              INVIMA Certified
+            </h3>
+            <p class="text-gray-600 text-sm">Registration #INV-2024-MC-789</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-6 text-center">
+            <div
+              class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="ri-award-line text-green-700 text-2xl"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">GMP Certified</h3>
+            <p class="text-gray-600 text-sm">Good Manufacturing Practice</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-6 text-center">
+            <div
+              class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="ri-secure-payment-line text-orange-700 text-2xl"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Secure Operations
+            </h3>
+            <p class="text-gray-600 text-sm">ISO 27001 Compliant</p>
+          </div>
+        </div>
+        <div class="mt-16 text-center">
+          <p class="text-gray-600 max-w-4xl mx-auto">
+            All our products are manufactured in licensed facilities following
+            strict pharmaceutical standards. We maintain full traceability from
+            cultivation to delivery, ensuring the highest quality and safety
+            standards for our patients in Medellin and throughout Colombia.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Contact & Consultation -->
+    <section id="contact" class="py-20 bg-primary text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-4xl font-bold mb-6">
+              Ready to Start Your Treatment?
+            </h2>
+            <p class="text-xl text-white/90 mb-8">
+              Schedule a consultation with our patient care team to learn more
+              about medical cannabis options for your condition.
+            </p>
+            <div class="space-y-4 mb-8">
+              <div class="flex items-center">
+                <div class="w-6 h-6 flex items-center justify-center mr-4">
+                  <i class="ri-phone-line text-white text-xl"></i>
+                </div>
+                <span class="text-white/90">+57 4 123 4567</span>
+              </div>
+              <div class="flex items-center">
+                <div class="w-6 h-6 flex items-center justify-center mr-4">
+                  <i class="ri-mail-line text-white text-xl"></i>
+                </div>
+                <span class="text-white/90">info@medellindispensary.co</span>
+              </div>
+              <div class="flex items-center">
+                <div class="w-6 h-6 flex items-center justify-center mr-4">
+                  <i class="ri-map-pin-line text-white text-xl"></i>
+                </div>
+                <span class="text-white/90">Medellin, Colombia</span>
+              </div>
+            </div>
+            <div class="flex space-x-4">
+              <button
+                class="bg-white text-primary px-8 py-4 !rounded-button hover:bg-gray-100 transition-colors font-semibold whitespace-nowrap"
+              >
+                Schedule Consultation
+              </button>
+              <button
+                class="border-2 border-white text-white px-8 py-4 !rounded-button hover:bg-white hover:text-primary transition-colors font-semibold whitespace-nowrap"
+              >
+                Find a Doctor
+              </button>
+            </div>
+          </div>
+          <div class="bg-white/10 backdrop-blur rounded-xl p-8">
+            <h3 class="text-2xl font-bold text-white mb-6">Quick Contact</h3>
+            <form class="space-y-4">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-white"
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-white"
+                />
+              </div>
+              <div>
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-white"
+                />
+              </div>
+              <div>
+                <textarea
+                  placeholder="Message"
+                  rows="4"
+                  class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-white resize-none"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-white text-primary py-3 !rounded-button hover:bg-gray-100 transition-colors font-semibold whitespace-nowrap"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-2xl font-['Pacifico'] text-primary mb-4">
+              Medellin Dispensary
+            </h3>
+            <p class="text-gray-400 mb-6">
+              Professional medical cannabis solutions for patients in Medellin,
+              Colombia.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-facebook-line"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-linkedin-line"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Products</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Cannabis Oils</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Tinctures</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Capsules</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Product Guide</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Resources</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >How It Works</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Dosing Guide</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Find a Doctor</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Legal</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Compliance</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Licenses</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 text-sm">
+              © 2024 Medellin Dispensary. All rights reserved. Licensed medical
+              cannabis distributor in Colombia.
+            </p>
+            <p class="text-gray-400 text-sm mt-4 md:mt-0">
+              Medical cannabis prescription required. Not for recreational use.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script id="navigation-mobile">
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.querySelector("[data-mobile-menu-button]");
+        const mobileMenu = document.querySelector("[data-mobile-menu]");
+        if (mobileMenuButton && mobileMenu) {
+          mobileMenuButton.addEventListener("click", function () {
+            mobileMenu.classList.toggle("hidden");
+          });
+        }
+      });
+    </script>
+    <script id="smooth-scrolling">
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll('a[href^="#"]');
+        links.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          });
+        });
+      });
+    </script>
+    <script id="form-handling">
+        const contactForm = document.querySelector("form");
+        if (contactForm) {
+          contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            const name = this.querySelector('input[placeholder="Full Name"]').value;
+            const email = this.querySelector(
+              'input[placeholder="Email Address"]',
+            ).value;
+            if (name && email) {
+              alert(
+                "Thank you for your message! We will contact you within 24 hours.",
+              );
+              this.reset();
+            } else {
+              alert("Please fill in all required fields.");
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
